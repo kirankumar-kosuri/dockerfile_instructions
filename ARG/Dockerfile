@@ -2,5 +2,5 @@ ARG VERSION
 FROM almalinux:${VERSION:-9}
 ARG COURSE="DEVSECOPS" \
     TRAINER="KIRAN"
-RUN "Trainer: ${TRAINER}, Course: ${COURSE}"
+RUN "Trainer: ${TRAINER}, Course: ${COURSE}, Version: ${VERSION}"
 CMD ["sleep","1000"]
